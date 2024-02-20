@@ -8,7 +8,7 @@ test("Select new user and partially fill the form", async ({ page }) => {
   await clientTypePage.visit()
   await clientTypePage.isPageAvailable()
   await clientTypePage.goToFormAsNewClient()
-  await clientEvaluationFormPage.selectNumberOfCreditParticipants(1)
+  await clientEvaluationFormPage.selectNumberOfLoanParticipants(1)
   await clientEvaluationFormPage.enterBirthDate("01-02-1990")
   await clientEvaluationFormPage.pickGender("Kobieta")
   await clientEvaluationFormPage.enterAlimonyObligationsAmount(10000)

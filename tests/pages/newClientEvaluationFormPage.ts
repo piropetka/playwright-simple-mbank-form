@@ -34,7 +34,7 @@ export class newClientEvaluationFormPage {
     await expect(this.page).toHaveURL(/Page2/)
   }
 
-  async selectNumberOfCreditParticipants(participantsCount: participantsType) {
+  async selectNumberOfLoanParticipants(participantsCount: participantsType) {
     await this.participantsCount.getByText(`${participantsCount}`).click()
   }
 
